@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebDesignCourse</title>
-    <style>
-    table,th,td{
-        border: 1px solid rgb(255, 0, 111);
-        border-collapse: collapse;
-        padding: 8px;
-    }
-    th,td{
-        text-align:left
-    }
-
+    <link rel="stylesheet" href="style.css">
+    
     </style>
 </head>
 <body>
-<h1 align="center">This is my biography.</h1>
-<hr color="blue" width="50%" >   
+    <header>
+        <h1 id="S1">Welcome to my biography pages</h1>
+        <h1 align="center">This is my biography.</h1>
+        <hr color="blueviolet" width="50%">
+    </header>
+
 <p align="justify">My name is Hak Kimhour. I am 18 years old this year.I live in Phnom Penh.
     <br>
       I am now a year 1 university stundent at CADT.But before become a university student I have come through a alot of thing during the teenager.
@@ -32,30 +28,34 @@
 </p>
 </br>
 </p>
-<img src="IMG_2482.JPG" alt="Hak Kimhour" width="200" align="center">
-<img src="photo_2025-03-07_18-07-01.jpg" width="250" align="center">
-<img src="image.png" width="200" align="center">
-<img src="image copy.png" width="200" align="center">
+<div class="photo-gallery">
+<img id="photo1" src="IMG_2482.JPG" alt="Hak Kimhour" >
+<img id="photo2" src="photo_2025-03-07_18-07-01.jpg" >
+<img id="photo3" src="image.png" >
+<img id="photo4" src="image copy.png" >
+</div>  
 <br>
 <a href="https://www.facebook.com/share/v/19nFBDLwp8/" target="_blank">Click here to watch a video</a>
 </body>
 </html>
 <head>
     <body>
-        <h2>Contact Us</h2>
+        <h2 id="S2">Contact Us</h2>
+    <div class="container">
+
         <form>
-            <label for="name">Name:</label><br>
+            <label for="name" class="form-label">Name:</label><br>
             <input type="text" id="name" name="name"><br><br>
-            <lable for="email">Email:</lable><br>
+            <label for="email" class="form-label">Email:</label><br>
             <input type="email" id="email" name="email"><br><br>
-            <lable for="message">Message:</label><br>
+            <label for="message" class="form-label">Message:</label><br>
             <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
             <input type="checkbox" id="news" name="BBC">
-            <label for="news">Subscribe to newsletter</label><br><br>
+            <label for="news">CALL US</label><br><br>
             <input type="submit" value="Submit">
         </form>
-
-        <h3>My Skills</h3>
+    </div>
+        <h3 id="S3">My Skills</h3>
         <table>
             <thead>
                 <tr>
@@ -78,9 +78,14 @@
                 </tr>
             </tbody>
         </table>
-    </body>
-
         
+    
+<footer>
+    <p align="center">
+        2025 Hak Kimhour. All rights reserved.
+    </p>
+</footer>
+</body>   
     
 </head>
 </html>

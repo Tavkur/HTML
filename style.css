@@ -1,0 +1,58 @@
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+#photo1, #photo2, #photo3, #photo4 {
+    width: 250px;   
+        height: 250px;  
+        border-radius: 50%;  
+        object-fit: cover;   
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+table,th,td{
+    border: 1px solid blueviolet;
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+}
+#S1, #S2 , #S3 {
+    color: blueviolet;
+}
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    width: 100%;
+    max-width: 540px;
+    padding: 15px 45px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid blueviolet;
+    align-items: center;
+    align-content: center;
+    margin: 10px 500px 10px 500px;
+}
+label[for="name"], label[for="email"], label[for="message"] ,label[for="news"] ,label[for="skills"] {
+    font-weight: bold;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
